@@ -11,7 +11,6 @@ env:
   # Change these values if you have forked it for your own works
   # Use Lowercase vaue of your Username
   GITHUB_USERNAME: satorugojo2k23
-  GITHUB_NAME: SatoruGojo2k23
   GITHUB_EMAIL: satorugojo4200@gmail.com
 
   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
@@ -30,12 +29,12 @@ jobs:
 
       - name: Configuring git
         run: |
-          git config --global user.name $GITHUB_NAME
+          git config --global user.name $GITHUB_USERNAME
           git config --global user.email $GITHUB_EMAIL
 
       - name: Logging in to Docker
         run: |
-          echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_NAME --password-stdin
+          echo $GITHUB_TOKEN | docker login ghcr.io -u $GITHUB_USERNAME --password-stdin
 
       - name: Building the Image
         run: |

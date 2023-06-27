@@ -9,7 +9,7 @@ CMD ["--oom-kill-disable"]
 WORKDIR /root
 
 # Maintainer
-MAINTAINER Sanju0910 <sreeshankar0910@gmail.com>
+MAINTAINER SatoruGojo2k23 <satorugojo4200@gmail.com>
 
 # Delete the profile files (we'll copy our own in the next step)
 RUN \
@@ -28,7 +28,7 @@ RUN apt update
 RUN apt install apt-utils sudo -y
      
 # tzdata
-ENV TZ Asia/Kolkata
+ENV TZ Asia/Dhaka
 
 
 RUN \
@@ -42,8 +42,8 @@ RUN sudo apt install git ssh -y
 RUN sudo apt install repo -y
 
 # Configure git
-ENV GIT_USERNAME Sanju0910
-ENV GIT_EMAIL sreeshankar0910@gmail.com
+ENV GIT_USERNAME SatoruGojo2k23
+ENV GIT_EMAIL satorugojo4200@gmail.com
 RUN \
     git config --global user.name $GIT_USERNAME \
 &&  git config --global user.email $GIT_EMAIL
@@ -65,7 +65,7 @@ RUN \
 sudo apt install \
     curl wget aria2 tmate python2 python3 silversearch* \
     iputils-ping iproute2 \
-    nano rsync rclone tmux screen openssh-server \
+    nano rsync git-lfs rclone tmux screen openssh-server \
     python3-pip adb fastboot jq npm neofetch mlocate \
     zip unzip tar ccache \
     cpio lzma \
