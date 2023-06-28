@@ -65,7 +65,7 @@ RUN \
 sudo apt install \
     curl wget aria2 tmate python2 python3 silversearch* \
     iputils-ping iproute2 \
-    nano rsync git-lfs rclone tmux screen openssh-server \
+    nano rsync git-lfs rclone tmux screen openssh-server bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libwxgtk3.0-gtk3-dev libxml2 libxml2-utils lzop pngcrush schedtool squashfs-tools xsltproc zip zlib1g-dev \
     python3-pip adb fastboot jq npm neofetch mlocate \
     zip unzip tar ccache \
     cpio lzma \
