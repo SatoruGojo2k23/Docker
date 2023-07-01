@@ -100,9 +100,5 @@ sudo ln -sf /usr/bin/python2 /usr/bin/python
 RUN \
 sudo pip install ninja
 
-#Sync Crdroid Source
-RUN \
-mkdir lineage && cd lineage && repo init -u https://github.com/crdroidandroid/android.git -b 13.0 --git-lfs --depth=1 && repo sync
-
 # Run bash
 CMD ["bash"]
